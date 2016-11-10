@@ -5,7 +5,7 @@ def prime_generator(n):
     elif n < 2:
         return "The number has to be greater than 1"
     
-    
+    #added two to my list since two will not get tested in the for loop
     prime_nums = [2]    
     for num in range(2, n+1):
         #optimized with trial division and added two due to
@@ -17,5 +17,3 @@ def prime_generator(n):
             prime_nums.append(num)
 
     return  prime_nums
-
-print prime_generator(15)

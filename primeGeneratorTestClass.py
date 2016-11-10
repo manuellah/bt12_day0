@@ -35,7 +35,9 @@ class TestPrimeGenerator(unittest.TestCase):
         
     def test_with_three(self):
         self.assertEqual(prime_generator(3), [2, 3])
-    
+    def test_with_large_num(self):
+        my_list = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]
+        self.assertEqual(prime_generator(70), my_list )
         
 if __name__ == '__main__':
     unittest.main()
