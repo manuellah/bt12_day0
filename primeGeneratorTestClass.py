@@ -11,16 +11,21 @@ class TestPrimeGenerator(unittest.TestCase):
             prime_generator("test")
             
     def test_return_list_for_valid_input(self):
-        pass
+        
     def test_float_nums(self):
         pass
     def test_negative_numbers(self):
-        pass
+        self.assertEqual(prime_generator(-12), "The number has to be greater than 1")
     def test_numbers_less_then_two(self):
         pass
+    def test_with_one(self):
+        self.assertEqual(prime_generator(1), "The number has to be greater than 1")
+    
     def test_with_two(self):
-        pass
+        self.assertEqual(prime_generator(2), [2])
     def test_with_three(self):
+        self.assertEqual(prime_generator(3), [2, 3])
+    
         
 if __name__ == '__main__':
     unittest.main()
