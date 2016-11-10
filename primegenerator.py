@@ -1,6 +1,6 @@
 def prime_generator(n):
     if not isinstance(n, int):
-        return "Invalid Input"
+        raise TypeError
     
     elif n < 2:
         return "The number has to be greater than 1"
@@ -20,5 +20,3 @@ def prime_generator(n):
             prime_nums.append(num)
             
     return  prime_nums
-
-print prime_generator(13)
